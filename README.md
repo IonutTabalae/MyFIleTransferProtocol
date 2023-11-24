@@ -5,7 +5,7 @@
 This is a TCP client-server application that allows file transfer between clients and server, as well as other actions with files/directories in a local file system.
 A child process is created from the main process for each new connected client, by fork(). The client sends a command to the server (/login, /list files), and the server checks the syntax, interprets it, executes it and sends a response back to the client. Clients are identified by IP and port.
 
-The language used is C.
+The language used is **C**.
 
 ## Features
 
@@ -16,7 +16,7 @@ The language used is C.
 
 ## How it Works
 
-For each new connected client, a child process is created from the main process by `fork()`. The client sends a command to the server (like `/login`, `/list files`), and the server checks the syntax, interprets it, executes it, and sends a response back to the client. Clients are identified by IP and port. The language used for this application is C.
+For each new connected client, a child process is created from the main process by `fork()`. The client sends a command to the server (like `/login`, `/list files`), and the server checks the syntax, interprets it, executes it, and sends a response back to the client. Clients are identified by IP and port.
 
 ## Installation
 
