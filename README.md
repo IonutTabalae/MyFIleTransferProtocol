@@ -1,5 +1,7 @@
 # MyFileTransferProtocol 
 
+For a full comprehensive LaTeX description of the project and diagrams, go to this [document]()
+
 This is a TCP client-server application that allows file transfer between clients and server, as well as other actions with files/directories in a local file system.
 A child process is created from the main process for each new connected client, by fork(). The client sends a command to the server (/login, /list files), and the server checks the syntax, interprets it, executes it and sends a response back to the client. Clients are identified by IP and port.
 
