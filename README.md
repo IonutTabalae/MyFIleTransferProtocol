@@ -1,18 +1,14 @@
-# MyFileTransferProtocol 
+# MyFileTransferProtocol: A Comprehensive TCP Client-Server Application
 
-**_For a full comprehensive LaTeX description of the project and diagrams, go to this [document](MyFTP.pdf)._**
+**_For a detailed LaTeX description of the project and diagrams, please refer to this [document](MyFTP.pdf)._**
 
-This is a TCP client-server application that allows file transfer between clients and server, as well as other actions with files/directories in a local file system.
-A child process is created from the main process for each new connected client, by fork(). The client sends a command to the server (/login, /list files), and the server checks the syntax, interprets it, executes it and sends a response back to the client. Clients are identified by IP and port.
+MyFileTransferProtocol is a robust **TCP client-server application** developed in **C**, facilitating file transfer between clients and server. It also enables various actions with files/directories in a local file system. Each new connected client is handled by a child process, created from the main process using `fork()`. Clients are identified by IP and port.
 
-The language used is **C**.
+## Key Features
 
-## Features
-
-- **Login**: The user must log in with a username and password that are stored in a SQLite database on the server. The password is transmitted securely, using SHA1 hashing function.
-- **File Transfer**: The user can send or receive files to or from the server, using the commands `/send` and `/receive`. The files are transferred using TCP sockets, ensuring accurate and reliable data transmission.
-- **File Management**: The user can perform various actions on the local files/directories, such as creating, renaming, deleting, moving, or listing the contents of the current or another directory, using the commands `/create`, `/rename`, `/delete`, `/move`, or `/list files`.
-- 
+- **Secure Login**: Users are authenticated using a username and password stored in a SQLite database on the server. Passwords are transmitted securely via SHA1 hashing function.
+- **Reliable File Transfer**: Users can send or receive files to/from the server using the `/send` and `/receive` commands. File transfer is facilitated through TCP sockets, ensuring accurate and reliable data transmission.
+- **Local File Management**: Users can perform various actions on local files/directories, such as creating, renaming, deleting, moving, or listing the contents of the current or another directory, using the commands `/create`, `/rename`, `/delete`, `/move`, or `/list files`.
 
 ## How it Works
 
@@ -28,8 +24,6 @@ To compile the source code, use the following commands:
 gcc -o server server.c -lsqlite3
 gcc -o client client.c
 ```
-
-
 
 ## Usage
 
@@ -71,4 +65,6 @@ To exit the application, use the following command:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+
+This project showcases skills in **network programming**, **multi-process architecture**, **database management** with SQLite, and **security practices** with SHA1 hashing. It's an excellent demonstration of **system programming** capabilities.
