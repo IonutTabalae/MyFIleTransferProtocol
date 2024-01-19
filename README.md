@@ -64,8 +64,6 @@ To exit the application, use the following command:
 ```
 This project showcases skills in **network programming**, **multi-process architecture**, **database management** with SQLite, and **security practices** with SHA1 hashing. It's an excellent demonstration of **system programming** capabilities.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
 
 
